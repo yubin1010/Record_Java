@@ -9,7 +9,7 @@ public class redisson {
 
 	public static void main(String[] args) {
 		Config config = new Config();
-		config.useSingleServer().setAddress("redis://192.168.179.12:6379");
+		config.useSingleServer().setAddress("redis://[ip]:6379");
 
 		RedissonClient redisson = Redisson.create(config);
 		
